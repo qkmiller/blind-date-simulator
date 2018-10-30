@@ -1,0 +1,8 @@
+.click:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor:pointer;
+}
+#frame1, #frame2, #kickedout, #frame4, #frame5, #frame6, #frame7, #frame8, #frame9, #frame10{
+  display: none;
+}

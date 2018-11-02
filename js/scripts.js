@@ -47,7 +47,7 @@ $(document).ready(function(){
   $("#frame5 .choice1").click(function(){
     $(".username").text(name);
     $("#frame5").hide();
-    $("#frame6").show();
+    $("#offensive").show();
   });
   $("#frame5 .choice2").click(function(){
     $(".username").text(name);
@@ -64,7 +64,7 @@ $(document).ready(function(){
   $("#frame6 .choice1").click(function(){
     $(".username").text(name);
     $("#frame6").hide();
-    $("#frame7").show();
+    $("#offensive").show();
   });
   $("#frame6 .choice2").click(function(){
     $(".username").text(name);
@@ -115,7 +115,7 @@ $(document).ready(function(){
   $("#frame8 .choice3").click(function(){
     $(".username").text(name);
     $("#frame8").hide();
-    $("#frame9").show();
+    $("#badEnding").show();
   });
 
 
@@ -234,9 +234,24 @@ $(document).ready(function(){
   $("#frame15 .choice2").click(function(){
     $(".username").text(name);
     $("#frame15").hide();
-    $("#frame15").show();
+    $("#kickedout").show();
   });
   $("#frame15 .choice3").click(function(){
+    $(".username").text(name);
+    $("#frame15").hide();
+    $("#frame15").show();
+  });
+  $("#offensive .choice1").click(function(){
+    $(".username").text(name);
+    $("#frame15").hide();
+    $("#frame15").show();
+  });
+  $("#offensive .choice2").click(function(){
+    $(".username").text(name);
+    $("#frame15").hide();
+    $("#frame15").show();
+  });
+  $("#offensive .choice3").click(function(){
     $(".username").text(name);
     $("#frame15").hide();
     $("#frame15").show();

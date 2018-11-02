@@ -52,7 +52,7 @@ $(document).ready(function(){
   $("#frame5 .choice2").click(function(){
     $(".username").text(name);
     $("#frame5").hide();
-    $("#frame6").show();
+    $("#frame10").show();
   });
   $("#frame5 .choice3").click(function(){
     $(".username").text(name);
@@ -83,17 +83,17 @@ $(document).ready(function(){
   $("#frame7 .choice1").click(function(){
     $(".username").text(name);
     $("#frame7").hide();
-    $("#frame8").show();
+    $("#frame9").show();
   });
   $("#frame7 .choice2").click(function(){
     $(".username").text(name);
     $("#frame7").hide();
-    $("#frame8").show();
+    $("#frame9").show();
   });
   $("#frame7 .choice3").click(function(){
     $(".username").text(name);
     $("#frame7").hide();
-    $("#frame8").show();
+    $("#frame9").show();
   });
   $("#frame7 .choice4").click(function(){
     $(".username").text(name);
@@ -122,17 +122,17 @@ $(document).ready(function(){
   $("#frame9 .choice1").click(function(){
     $(".username").text(name);
     $("#frame9").hide();
-    $("#frame10").show();
+    $("#frame11").show();
   });
   $("#frame9 .choice2").click(function(){
     $(".username").text(name);
     $("#frame9").hide();
-    $("#frame10").show();
+    $("#frame11").show();
   });
   $("#frame9 .choice3").click(function(){
     $(".username").text(name);
     $("#frame9").hide();
-    $("#frame10").show();
+    $("#frame11").show();
   });
 
 
@@ -144,7 +144,7 @@ $(document).ready(function(){
   $("#frame10 .choice2").click(function(){
     $(".username").text(name);
     $("#frame10").hide();
-    $("#frame11").show();
+    $("#frame6").show();
   });
   $("#frame10 .choice3").click(function(){
     $(".username").text(name);
@@ -152,13 +152,10 @@ $(document).ready(function(){
     $("#frame11").show();
   });
 
-
-
-
   $("#frame11 .choice1").click(function(){
     $(".username").text(name);
     $("#frame11").hide();
-    $("#frame12").show();
+    $("#offensive").show();
   });
   $("#frame11 .choice2").click(function(){
     $(".username").text(name);
@@ -188,11 +185,7 @@ $(document).ready(function(){
     $("#frame12").hide();
     $("#frame13").show();
   });
-  $("#frame13 button").click(function(){
-    $(".username").text(name);
-    $("#frame13").hide();
-    $("#frame14").show();
-  });
+
   $("#frame13 .choice1").click(function(){
     $(".username").text(name);
     $("#frame13").hide();
@@ -201,12 +194,12 @@ $(document).ready(function(){
   $("#frame13 .choice2").click(function(){
     $(".username").text(name);
     $("#frame13").hide();
-    $("#frame14").show();
+    $("#frame8").show();
   });
   $("#frame13 .choice3").click(function(){
     $(".username").text(name);
     $("#frame13").hide();
-    $("#frame14").show();
+    $("#frame8").show();
   });
 
   $("#frame14 .choice1").click(function(){
@@ -241,19 +234,20 @@ $(document).ready(function(){
     $("#frame15").hide();
     $("#frame15").show();
   });
+  
   $("#offensive .choice1").click(function(){
     $(".username").text(name);
-    $("#frame15").hide();
-    $("#frame15").show();
+    $("#offensive").hide();
+    $("#frame6").show();
   });
   $("#offensive .choice2").click(function(){
     $(".username").text(name);
-    $("#frame15").hide();
-    $("#frame15").show();
+    $("#offensive").hide();
+    $("#badEnding").show();
   });
   $("#offensive .choice3").click(function(){
     $(".username").text(name);
-    $("#frame15").hide();
-    $("#frame15").show();
+    $("#offensive").hide();
+    $("#badEnding").show();
   });
 });

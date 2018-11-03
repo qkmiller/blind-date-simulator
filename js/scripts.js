@@ -1,15 +1,36 @@
-var good = 0;
-var bad =0;
+var score = 5;
 var drinks = 0;
 var fire = 0;
+var waiter = 0;
+var subject = "";
 var name = "";
+var fistslam = 0;
+var frame
+function nextFrame(){
+  
+};
 $(document).ready(function(){
   $(".click").click(function(){
     $("#title").hide();
     $("#frame1").show();
   });
-  $("button .click .1").click(function(){
+  $("button[name=good]").click(function(){
+    score = score + 1;
+  });
+  $("button[name=ok]").click(function(){
 
+  });
+  $("button[name=bad]").click(function(){
+    score = score -3;
+  });
+  $("button[name=trump]").click(function(){
+    subject = "trump"
+  });
+  $("button[name=lie]").click(function(){
+    subject = "how you used your superior intelect to make billions from the stock market"
+  });
+  $("button[name=trek]").click(function(){
+    subject = "Startrek"
   });
 });
 //   $("#frame1 .choice1").click(function(){

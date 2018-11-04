@@ -5,32 +5,40 @@ var waiter = 0;
 var subject = "";
 var name = "";
 var fistslam = 0;
-var frame
+var frame = 0;
 function nextFrame(){
-  
+  var x=$(".frame").eq(frame);
+  x.css("display", "block");
+  frame+=1
 };
 $(document).ready(function(){
   $(".click").click(function(){
     $("#title").hide();
-    $("#frame1").show();
+    nextFrame();
   });
   $("button[name=good]").click(function(){
     score = score + 1;
+    nextFrame();
   });
   $("button[name=ok]").click(function(){
-
+    nextFrame();
   });
   $("button[name=bad]").click(function(){
     score = score -3;
+    nextFrame();
   });
   $("button[name=trump]").click(function(){
     subject = "trump"
+    $(".frame").hide();
+    $("#trump").show();
   });
   $("button[name=lie]").click(function(){
     subject = "how you used your superior intelect to make billions from the stock market"
+    nextFrame();
   });
   $("button[name=trek]").click(function(){
     subject = "Startrek"
+    nextFrame();
   });
 });
 //   $("#frame1 .choice1").click(function(){

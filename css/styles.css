@@ -3,10 +3,13 @@
   text-decoration: underline;
   cursor:pointer;
 }
-#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7, #frame8, #frame9, #frame10, #frame11, #frame12, #frame13, #frame14, #frame15, #offensive, #badend1, #badend2, #goodend1, #okend, #fireend, #trump, #drunk1, #trekend1{
+#offensive, #badend1, #badend2, #goodend1, #okend, #fireend, #trump, #drunk1, #trekend1{
   display: none;
 }
 #trek, #trekend2 {
+  display: none;
+}
+.frame {
   display: none;
 }
 .jumbotron {

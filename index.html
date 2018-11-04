@@ -18,61 +18,55 @@
         <div class="frame">
           <p>Your date hasn't arrived yet and the waiter asks if you would like anything to drink.</p>
           <button class="click" type="button" name="good">Order water.</button><br>
-          <button class="click" type="button" name="ok">Order shots.</button><br>
-          <button class="click" type="button" name="badend1">Tell waiter to fuck off.</button><br>
+          <button class="click drink" type="button" name="neut">Order shots.</button><br>
+          <button class="click" type="button" name="ok">Tell the waiter "Whatever it is you're selling, im not interested".</button><br>
         </div>
         <div class="frame">
           <p>Your date walks in and you are pleasantly surprised. "What's your name?" your date asks.</p>
-          <input type="text">
-          <button class=".click" type="button" name="button">Ok</button><br>
+          <input type="text" onkeypress="return /[A-za-z]/i.test(event.key)" pattern="[A-za-z]">
+          <button class="click" type="button" name="username">Ok</button><br>
         </div>
         <div class="frame">
           <p>Everything seems to be going well but it's kind of quiet. You break the silence by asking your date: </p>
           <button class="click" type="button" name="good">What is your career?</button><br>
-          <button class="click" type="button" name="ok">In the future, when you die would you consider sending your head into space?</button>
+          <button class="click" type="button" name="ok">In the future, when you die would you consider sending your head into space?</button><br>
           <button class="click" type="button" name="trump">What are your feelings on Donald Trump? Personally i think hes the best president we've ever had.</button><br>
         </div>
-        <div class="frame">
-          <p>Your date asks "<span class="username"></span>, What do you do for a living?" You: </p>
-          <button class="click" type="button" name="good">You explain that you are taking a program called Epicodus, and are looking for a carreer in the tech industry.</button><br>
-          <button class="click" type="button" name="lie">Lie and say you are a billionaire, giving no explanation. When asked about it you avoid the question and try to change the subject</button>
-          <button class="click" type="button" name="bad">You slam your fist on the table and say "none of your damn business!"</button><br>
+        <div class="frame row">
+          <p>Your date asks "<span class="username"></span>, what do you do for a living?" You: </p>
+          <button class="click" type="button" name="good">Explain that you are taking a program called Epicodus, and are looking for a carreer in the tech industry.</button><br>
+          <button class="click" type="button" name="lie">Lie and say you are a billionaire, giving no explanation at all. When asked about it you avoid the question and try to change the subject.</button><br>
+          <button class="click" type="button" name="bad">Slam your fist on the table and say "None of your damn business!"</button><br>
         </div>
         <div class="frame">
           <p>Your waiter comes and asks for your order. You do one of the following:</p>
           <button class="click" type="button" name="good">Start off with a couple of appetizers and your order, followed by letting him/her order whatever she fancies.</button><br>
-          <button class="click" type="button" name="ok">Without looking at the menu, you ask the waiter what the cheapest item on the menu is. When told the price, you say you'll just have another shot.</button><br>
-          <button class="click slam" type="button" name="bad">Slam your fist on the table and tell the waiter "<span class="waiter"></span>"</button><br>
+          <button class="click drink" type="button" name="ok">Without looking at the menu, you ask the waiter what the cheapest item on the menu is. When told the price, you say you'll just have another shot.</button><br>
+          <button class="click slam" type="button" name="bad">Slam your fist on the table. "I dont want any!" you yell.</button><br>
+        </div>
+        <div class="frame">
+          <p>The waiter lets you know that they dont have the dish you ordered. What do you do?</p>
+          <button class="click" type="button" name="good">Order something else.</button><br>
+          <button class="click" type="button" name="ok">Complain in an annoying way and threaten to write a bad review on yelp if they dont compensate you a free meal.</button><br>
+          <button class="click" type="button" name="badend1">Publicly freakout and spit on the waiter.</button><br>
         </div>
         <div class="frame">
           <p>Your dates food looks really good. What do you do?</p>
           <button class="click" type="button" name="good">Compliment the dish.</button><br>
           <button class="click" type="button" name="ok">Steal some when your dates not looking.</button><br>
-          <button class="click" type="button" name="bad">You scoop some up with your bare hand and eat it.</button><br>
+          <button class="click" type="button" name="bad">Scoop some up with your bare hand and eat it, all while staring your date dead in the eyes.</button><br>
         </div>
         <div class="frame">
           <p>Your date goes to the bathroom. What do you do?</p>
-          <button class="click" type="button" name="good">Order another round of drinks.</button><br>
-          <button class="click" type="button" name="ok">Take a strand of your dates hair and add it to your collection.</button>
-          <button class="click" type="button" name="theft">Take money out of your dates wallet.</button><br>
-        </div>
-        <div class="frame">
-          <p>The check comes. What do you do?</p>
-          <button class="click" type="button" name="good">Offer to pay for everything.</button><br>
-          <button class="click" type="button" name="ok">Offer to split the bill.</button><br>
-          <button class="click" type="button" name="end">Create a diversion and leave.</button><br>
+          <button class="click drink" type="button" name="good">Order another round of drinks.</button><br>
+          <button class="click hair" type="button" name="ok">Take a strand of your dates hair and add it to your collection.</button><br>
+          <button class="click" type="button" name="ditch">When the staff isnt looking you ditch the resaurant.</button><br>
         </div>
         <div class="frame">
           <p>Your date looks bored and starts texting. What do you do?</p>
           <button class="click" type="button" name="good">Ask what kind of phone it is.</button><br>
-          <button class="click" type="button" name="ok">Look annoyed, and sigh passive aggressivly.</button><br>
+          <button class="click" type="button" name="ok">Look annoyed and sigh passive aggressivly.</button><br>
           <button class="click" type="button" name="bad">Take the phone and dont give it back.</button><br>
-        </div>
-        <div class="frame">
-          <p>The waiter lets you know that they dont have the dish you ordered. What do you do?</p>
-          <button class="click" type="button" name="good">Order something else.</button><br>
-          <button class="click" type="button" name="bad">Start crying hysterically.</button><br>
-          <button class="click" type="button" name="badend1">Publicly freakout and spit on the waiter.</button><br>
         </div>
         <div class="frame">
           <p>Your date has a booger hanging out of his/her nose. Its a cold winter day and her boogie-flakes are floating in the wind. What do you do?</p>
@@ -81,15 +75,9 @@
           <button class="click" type="button" name="bad">Say "Ewwwwwww" while laughing and pointing, embarassing your date.</button><br>
         </div>
         <div class="frame">
-          <p>The candle at the dinner table somehow catches the tablecloth on fire. What do you do?</p>
-          <button class="click" type="button" name="good">You react quickly and put out the fire with your water.</button><br>
-          <button class="click" type="button" name="ok">you scream curse words at the top of your lungs, the staff comes over and uses a fire extinguisher on the table.</button><br>
-          <button class="click" type="button" name="bad">you do nothing and act like the table isnt on fire.</button><br>
-        </div>
-        <div class="frame">
           <p>The waiter offers you and your date dessert. Your date orders dessert.</p>
           <button class="click" type="button" name="good">You order dessert also.</button><br>
-          <button class="click" type="button" name="ok">You dont order dessert.</button><br>
+          <button class="click" type="button" name="neut">You dont order dessert.</button><br>
           <button class="click" type="button" name="bad">You say "Wow, you really want dessert, fatty?"</button><br>
         </div>
         <div class="frame">
@@ -99,38 +87,50 @@
           <button class="click" type="button" name="bad">You slam your fist on the table and say "none of your damn business!"</button><br>
         </div>
         <div class="frame">
+          <p>The candle at the dinner table somehow catches the tablecloth on fire. What do you do?</p>
+          <button class="click" type="button" name="good">You react quickly and put out the fire with your water.</button><br>
+          <button class="click" type="button" name="ok">you scream curse words at the top of your lungs, the staff comes over and uses a fire extinguisher on the table.</button><br>
+          <button class="click" type="button" name="fire">you do nothing and act like the table isn't on fire.</button><br>
+        </div>
+        <div class="frame">
           <p>It's getting late and your date is hinting at wanting to leave. What do you do?</p>
           <button class="click" type="button" name="good">Ask for a number.</button><br>
-          <button class="click" type="button" name="ok">Interupt your date, Loudly call for the waiter and order another round of drinks.</button><br>
-          <button class="click" type="button" name="end">Say "Peace" and leave without paying.</button><br>
+          <button class="click drink" type="button" name="ok">Interupt your date, Loudly call for the waiter and order another round of drinks.</button><br>
+          <button class="click" type="button" name="ditch">Say "Peace" and leave without paying.</button><br>
+        </div>
+        <div class="frame">
+          <p>The check comes. What do you do?</p>
+          <button class="click final" type="button" name="good">Offer to pay for everything.</button><br>
+          <button class="click final" type="button" name="ok">Pretend you forgot your wallet.</button><br>
+          <button class="click" type="button" name="ditch">Create a diversion and leave.</button><br>
         </div>
         <div id="drunk1">
           <p>You have had 5 drinks and are pretty drunk. Your date seems annoyed by your slurred rambling and says "I think you're drunk <span class="username"></span>, you should drink some water." What do you do?</p>
-          <button class="click" type="button" name="good">Apologize, drink some water.</button><br>
-          <button class="click" type="button" name="ok">Say you are not that drunk and continue rambling about <span class="subject">.</button><br>
-          <button class="click" type="button" name="bad">Slam your fist on the table and say "I'll tell you when ive had enough!" you then chug the rest of your drink.</button><br>
+          <button class="click noframeskip" type="button" name="good">Apologize, drink some water.</button><br>
+          <button class="click noframeskip" type="button" name="bad">Say you are not that drunk and continue rambling about <span class="subject">.</button><br>
+          <button class="click noframeskip" type="button" name="badend1">Slam your fist on the table and say "I'll tell you when ive had enough!" you then chug the rest of your drink.</button><br>
         </div>
         <div id="trump">
           <p>Your date is discusted but tries to change the subject and continue with the date.</p>
-          <button class="click" type="button" name="continue">Next</button><br>
+          <button class="click" type="button" name="next">Next</button><br>
         </div>
         <div id="offensive">
           <p>You're date isn't pleased with your behavior and gets up to leave. You: </p>
-          <button class="click" type="button" name="good">Apologize for your behavior and ask for a second chance.</button><br>
-          <button class="click" type="button" name="end">Tell him/her "you'd have better luck finding a mate if you weren't so pushy".</button><br>
-          <button class="click" type="button" name="end">Scream curse words at the top of your lungs.</button><br>
+          <button class="click chance" type="button" name="ok">Apologize for your behavior and ask for a <span id="chancelevel">second</span> chance.</button><br>
+          <button class="click" type="button" name="badend2">Tell him/her "you'd have better luck finding a mate if you weren't so pushy".</button><br>
+          <button class="click" type="button" name="badend1">Scream curse words at the top of your lungs.</button><br>
         </div>
         <div id="trek">
           <p>Your date says "I love startrek!"</p>
-          <button class="click" type="button" name="continue">Next</button><br>
+          <button class="click" type="button" name="next">Next</button><br>
         </div>
         <div id="trekend1">
-          <p>Your date went really well, but the star trek thing sealed the deal. Your date askes if you want to come over and watch star trek.</p>
+          <p>Your date wasn't a complete disaster, but the star trek thing really sealed the deal. Your date askes if you want to come over and watch star trek.</p>
           <p>The End.</p>
           <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
         </div>
         <div id="trekend2">
-          <p>Your date went horribly. Regardless of that fact your date forgives you for being such an a-hole and says "I cant stay mad at a fellow trekkie." Your date askes if you want to come over and watch star trek.</p>
+          <p>Regardless of the fact that you were a complete nightmare, your date forgives you for being such an a-hole and says "I cant stay mad at a fellow trekkie." Your date askes if you want to come over and watch star trek.</p>
           <p>The End.</p>
           <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
         </div>
@@ -139,7 +139,7 @@
           <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
         </div>
         <div id="okend">
-          <p>You and your date had a great time! you schedule for your next date and can't wait to see eachother again!</p>
+          <p>The date wasn't that bad, you two decide to try for another date.</p>
           <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
         </div>
         <div id="badend1">
@@ -148,6 +148,22 @@
         </div>
         <div id="badend2">
           <p>Your date curses you out and leaves.</p>
+          <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
+        </div>
+        <div id="badend4">
+          <p>Your date decides that the two of you aren't compatible and says goodnight. You dont hear back from your date.</p>
+          <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
+        </div>
+        <div id="badend3">
+          <p>Your date is done listening to your lies and leaves.</p>
+          <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
+        </div>
+        <div id="ditchend1">
+          <p>You run and dont look back. Congradulations, you got a free meal...</p>
+          <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
+        </div>
+        <div id="ditchend2">
+          <p>You run and dont look back. Even though the date wasnt going too bad, you still feel the need to dine and ditch.</p>
           <button class="click" type="button" name="button" onClick=window.location.reload()>Restart</button><br>
         </div>
         <div id="fireend">

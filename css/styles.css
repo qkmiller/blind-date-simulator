@@ -6,7 +6,7 @@
 #offensive, #badend1, #badend2, #goodend1, #okend, #fireend, #trump, #drunk1, #trekend1{
   display: none;
 }
-#trek, #trekend2 {
+#trek, #trekend2, #ditchend1, #ditchend2, #badend3, #badend4 {
   display: none;
 }
 .frame {

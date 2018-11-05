@@ -149,13 +149,15 @@ $(document).ready(function(){
   $("button").click(function(){
     console.log(frame);
   });
-  $("button[name=drunkreply1]").click(function(){
+  $("button[name=sidereply1]").click(function(){
     $(".frame").eq(frame).show();
     $("#drunk1").hide();
+    $("#offensive").hide();
   });
-  $("button[name=drunkreply2]").click(function(){
+  $("button[name=sidereply2]").click(function(){
     $(".frame").eq(frame).show();
     $("#drunk1").hide();
+    $("#offensive").hide();
     score +=-2;
   });
 });

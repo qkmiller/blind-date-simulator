@@ -7,57 +7,56 @@ var name = "";
 var fistslam = 0;
 var frame = 0;
 var chances = "second";
-function nextFrame(){
-  var x=$(".frame").eq(frame);
-  x.css("display", "none");
-  frame+=1;
-  var x=$(".frame").eq(frame);
-  x.css("display", "block");
-  console.log(score);
-};
-function scoreCheck(){
-  $("div:not(.frame, .jumbotron, .container)").hide();
-  if (score>0) {
-    nextFrame();
-  } else {
-    $(".frame").hide();
-    $("#offensive").show();
-  }
-};
-function chanceCheck(){
-  if (chances==="second") {
-    chances="third";
-    $("div:not(.frame, .jumbotron, .container)").hide();
-    nextFrame();
-    $("#chancelevel").text(chances);
-  } else {
-    $("div:not(.frame, .jumbotron, .container)").hide();
-    $("#badend3").show();
-  }
-};
-function endCheck(){
-  if (score>=30) {
-    $(".frame").hide();
-    $("#goodend1").show();
-  } else if (score>=15) {
-    if (subject==="Startrek") {
-      $(".frame").hide();
-      $("#trekend1").show();
-    } else {
-      $(".frame").hide();
-      $("#okend").show();
-    }
-  } else {
-    if (subject==="Startrek") {
-      $(".frame").hide();
-      $("#trekend2").show();
-    } else {
-      $(".frame").hide();
-      $("#badend4").show();
-    }
-  }
-}
 $(document).ready(function(){
+  function nextFrame(){
+    var x=$(".frame").eq(frame);
+    x.css("display", "none");
+    frame+=1;
+    var x=$(".frame").eq(frame);
+    x.css("display", "block");
+  };
+  function scoreCheck(){
+    $("div:not(.frame, .jumbotron, .container)").hide();
+    if (score>0) {
+      nextFrame();
+    } else {
+      $(".frame").hide();
+      $("#offensive").show();
+    }
+  };
+  function chanceCheck(){
+    if (chances==="second") {
+      chances="third";
+      $("div:not(.frame, .jumbotron, .container)").hide();
+      nextFrame();
+      $("#chancelevel").text(chances);
+    } else {
+      $("div:not(.frame, .jumbotron, .container)").hide();
+      $("#badend3").show();
+    }
+  };
+  function endCheck(){
+    if (score>=30) {
+      $(".frame").hide();
+      $("#goodend1").show();
+    } else if (score>=15) {
+      if (subject==="Startrek") {
+        $(".frame").hide();
+        $("#trekend1").show();
+      } else {
+        $(".frame").hide();
+        $("#okend").show();
+      }
+    } else {
+      if (subject==="Startrek") {
+        $(".frame").hide();
+        $("#trekend2").show();
+      } else {
+        $(".frame").hide();
+        $("#badend4").show();
+      }
+    }
+  }
   $(".click").click(function(){
     $("#title").hide();
     var x=$(".frame").eq(frame);
@@ -68,7 +67,7 @@ $(document).ready(function(){
     scoreCheck();
   });
   $("button[name=ok]").click(function(){
-    score += -1
+    score += -1;
     scoreCheck();
   });
   $("button[name=neut]").click(function(){
@@ -80,6 +79,7 @@ $(document).ready(function(){
   });
   $("button[name=trump]").click(function(){
     subject = "about Trump";
+    $(".subject").text(subject);
     score += -5;
     $(".frame").hide();
     $("#trump").show();
@@ -92,7 +92,8 @@ $(document).ready(function(){
     scoreCheck();
   });
   $("button[name=lie]").click(function(){
-    subject = "about how you used your superior intelect to make billions from the stock market";
+    subject = "about being a billionaire";
+    $(".subject").text(subject);
     score += -3;
     scoreCheck();
   });
@@ -107,8 +108,14 @@ $(document).ready(function(){
     $("#fireend").show();
   });
   $("button[name=username]").click(function(){
-    username = $("input[type=text]").val();
-    nextFrame();
+    name = $("input[type=text]").val();
+    if (name.length>0) {
+      name = name.charAt(0).toUpperCase() + name.slice(1);
+      $(".username").text(name);
+      nextFrame();
+    } else {
+      alert("Please enter your name")
+    }
   });
   $("button[name=ditch]").click(function(){
     $(".frame").hide();
@@ -120,13 +127,12 @@ $(document).ready(function(){
   });
   $("button[name=badend1]").click(function(){
     $(".frame").hide();
+    $("#drunk1").hide();
     $("#offensive").hide();
     $("#badend1").show();
   });
   $(".drink").click(function(){
     drinks +=1;
-    console.log(drinks);
-    console.log(score);
     if (drinks>2) {
       $(".frame").hide();
       $("#drunk1").show();
@@ -140,8 +146,17 @@ $(document).ready(function(){
   $(".final").click(function(){
     endCheck();
   });
-  $(".noframeskip").click(function(){
-    frame+= -1;
+  $("button").click(function(){
+    console.log(frame);
+  });
+  $("button[name=drunkreply1]").click(function(){
+    $(".frame").eq(frame).show();
+    $("#drunk1").hide();
+  });
+  $("button[name=drunkreply2]").click(function(){
+    $(".frame").eq(frame).show();
+    $("#drunk1").hide();
+    score +=-2;
   });
 });
 //   $("#frame1 .choice1").click(function(){
